@@ -2,9 +2,9 @@
 
 {% block content%}
 
-<h1>
+<h1 class="text-center home-header">
   {% if user.is_authenticated %}
-    {{user.username}}'s Laundry Time
+    Laundry Buddy
   {% else %}
     Welcome!
   {% endif %}
@@ -18,7 +18,7 @@
 
 </div> -->
 <div class="row">
-  <div class="col-xs-12 col-md-8" id="reservations">
+  <div class="col-xs-12 col-md-8 col-md-offset-2" id="reservations">
     <!-- <h2>The List of Doing</h2> -->
     <div class="panel panel-default">
     <table class="table table-striped table-responsive">
@@ -34,8 +34,7 @@
           <td>
             {% if t.is_complete %}
               <!-- <input type="submit" value="reserved!" class="btn btn-info"> -->
-              <a href="{{t.id}}/available/">RESERVED</a>
-              <!-- <i class="glyphicon glyphicon-ok"> Reserved</i> -->
+              <a href="{{t.id}}/available/"><i class="glyphicon glyphicon-ok"></i>  RESERVED</a>
             {% else %}
              <!-- <input type="submit" value="reserve" class="btn btn-success"> -->
               <a href="{{t.id}}/done/">RESERVE</a>
