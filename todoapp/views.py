@@ -12,13 +12,10 @@ def index(request):
     #Get user and todo info from db
     todos = Todo.objects.all().order_by('text')
     users = User.objects.all()
-    r = requests.get('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=')
-    quote = json.loads(r.text)
     if request.method == "GET":
         return render(request, 'todoapp/index.html', {
           'todos': todos,
-          'users': users,
-          'quote': quote[0]})
+          'users': users})
         # return HttpResponse('index GET')
     elif request.method == "POST":
         try:

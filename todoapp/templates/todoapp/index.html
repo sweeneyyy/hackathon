@@ -2,12 +2,6 @@
 
 {% block content%}
 
-{% if quote %}
-<h2>Fun Quote</h2>
-<em>{% autoescape off %}{{ quote.content }}{% endautoescape %}</em>
-- {{ quote.title }}
-{% endif %}
-
 <h1>
   {% if user.is_authenticated %}
     {{user.username}}'s Todo List

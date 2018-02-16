@@ -1,13 +1,6 @@
-# python-django-todo
-Todo App built with Django
+# WDI / UX Hackathon
 
 
-## Installation
-```bash
-git clone git@github.com:WDI-SEA/python-django-todo.git
-cd python-django-todo
-createdb todoappsite
-python3 manage.py migrate
-python3 manage.py createsuperuser
-python3 manage.py runserver
-```
+## Technologies Used
+
+## Next Steps
