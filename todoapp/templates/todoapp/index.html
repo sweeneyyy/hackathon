@@ -14,9 +14,38 @@
 <p class="text-danger">{{error}}</p>
 {% endif %}
 
-<div>
-  
-</div>
+<!-- <div>
+
+</div> -->
+<div class="row">
+  <div class="col-xs-12 col-md-8" id="reservations">
+    <!-- <h2>The List of Doing</h2> -->
+    <div class="panel panel-default">
+    <table class="table table-striped table-curved">
+      <tr>
+        <th>Machine #</th>
+        <th>Available?</th>
+        <th>Reserve</th>
+      </tr>
+      {% for t in todos %}
+        <tr>
+          <td>{{t.text}}</td>
+          <td>{{t.user}}</td>
+          <td>
+            {% if t.is_complete %}
+              <!-- <input type="submit" value="reserved!" class="btn btn-info"> -->
+              <a href="{{t.id}}/available/">RESERVED</a>
+              <!-- <i class="glyphicon glyphicon-ok"> Reserved</i> -->
+            {% else %}
+             <!-- <input type="submit" value="reserve" class="btn btn-success"> -->
+              <a href="{{t.id}}/done/">RESERVE</a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+
 
 <!-- <div class="row">
   <div class="col-xs-6">
