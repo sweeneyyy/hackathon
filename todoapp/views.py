@@ -30,6 +30,11 @@ def index(request):
             return redirect('index')
         # return HttpResponse('index POST')
 
+def payment(request):
+    #Get reservation page
+    if request.method == "GET":
+        return render(request, 'todoapp/payment.html')
+
 def reservation(request):
     #Get reservation page
     if request.method == "GET":

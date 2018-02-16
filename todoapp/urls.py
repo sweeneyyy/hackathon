@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^login', views.login, name="login"),
     url(r'^reservation', views.reservation, name="reservation"),
     url(r'^start', views.start, name="start"),
+    url(r'^payment', views.payment, name="payment"),
     url(r'^washing', views.washing, name="washing"),
     url(r'^complete', views.complete, name="complete"),
     url(r'^logout$', views.logout, name="logout"),
