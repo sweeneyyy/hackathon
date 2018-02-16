@@ -30,6 +30,26 @@ def index(request):
             return redirect('index')
         # return HttpResponse('index POST')
 
+def reservation(request):
+    #Get reservation page
+    if request.method == "GET":
+        return render(request, 'todoapp/reservation.html')
+
+def start(request):
+    #Get reservation page
+    if request.method == "GET":
+        return render(request, 'todoapp/start.html')
+
+def washing(request):
+    #Get reservation page
+    if request.method == "GET":
+        return render(request, 'todoapp/washing.html')
+
+def complete(request):
+    #Get reservation page
+    if request.method == "GET":
+        return render(request, 'todoapp/complete.html')
+
 def delete(request, todo_id):
     item = Todo.objects.get(id=todo_id)
     item.delete()

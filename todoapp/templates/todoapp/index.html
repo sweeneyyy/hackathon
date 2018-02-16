@@ -4,15 +4,19 @@
 
 <h1>
   {% if user.is_authenticated %}
-    {{user.username}}'s Todo List
+    {{user.username}}'s Laundry Time
   {% else %}
-    Hello anonymous user!
+    Welcome!
   {% endif %}
 </h1>
 
 {% if error %}
 <p class="text-danger">{{error}}</p>
 {% endif %}
+
+<div>
+  
+</div>
 
 <!-- <div class="row">
   <div class="col-xs-6">
