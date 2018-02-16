@@ -11,18 +11,34 @@ body {
 }
 */
 
+<<<<<<< HEAD
 /*.login-page{
 	left: 500px;
 }*/
 
+=======
+>>>>>>> 1ae64e530f265ba84d5eabecffadf74b03d33ceb
 
 .credit-button{
 	text-align: center;
 }
 
-.todo-list{
-  /*border: 1px solid black;*/
-  /*border-radius: 8px;*/
+.reservations{
   /*width: 600px;*/
   margin-bottom: 300px;
+}
+
+.table {
+  /*border: 1px solid black;*/
+  border-radius: 8px;
+}
+
+#reservations {
+  /*border: 1px solid black;*/
+  border-radius: 8px;
+  margin-bottom: 300px;
+}
+
+td, tr, th {
+  padding: 30px !important;
 }
