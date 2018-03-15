@@ -2,17 +2,12 @@ body {
   font-family: 'Nunito', sans-serif;
   color: white;
   background-color: #8EBECC;
- 
 }
 
-
-/*.credit{
-	right: 15px;
-}
-*/
 #unlock {
   margin-right: 10px;
 }
+
 #start {
   margin-right: 10px;
 }
@@ -29,16 +24,29 @@ body {
   color: gray;
 }
 
-/*.login-page{
-	left: 500px;
-}*/
+.login {
+  background-image: url("./blue.png");
+  background-repeat: no-repeat;
+}
 
+#login-header {
+  margin-bottom: 50px;
+}
+
+#login {
+  margin-top: 25px;
+}
+
+#machine {
+  border-radius: 30px;
+}
 
 #timer {
   font-size: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .credit-button{
 	text-align: center;
   display: block;
@@ -69,7 +77,6 @@ td, tr, th {
   padding: 30px !important;
   color: black !important;
   font-family: 'Nunito', sans-serif;
-
 }
 
 th {
