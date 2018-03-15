@@ -10,14 +10,23 @@ body {
 	right: 15px;
 }
 */
-
-
+#unlock {
+  margin-right: 10px;
+}
 #start {
+  margin-right: 10px;
+}
+
+#user{
+  margin-bottom: 40px !important;
+}
+
+.cycle {
   background-color: white;
   margin-top: 200px;
   width: 100px: 
   height: 100px;
-  color: black;
+  color: gray;
 }
 
 /*.login-page{
@@ -28,9 +37,16 @@ body {
 #timer {
   font-size: 50px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .credit-button{
 	text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#inputState {
+  margin-bottom: 25px;
 }
 
 .reservations{
